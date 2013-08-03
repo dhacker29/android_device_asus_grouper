@@ -84,3 +84,4 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
 TARGET_KERNEL_CONFIG := cyanogenmod_grouper_defconfig
+RECOVERY_FSTAB_VERSION := 2
