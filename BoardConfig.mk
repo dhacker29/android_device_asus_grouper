@@ -57,6 +57,7 @@ BOARD_SEPOLICY_UNION := \
         init_shell.te \
         keystore.te \
         mediaserver.te \
+        sdcardd.te \
         sensors_config.te \
         surfaceflinger.te \
         system.te \
