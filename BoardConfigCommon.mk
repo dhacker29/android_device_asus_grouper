@@ -85,3 +85,24 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
 TARGET_KERNEL_CONFIG := cyanogenmod_grouper_defconfig
 RECOVERY_FSTAB_VERSION := 2
+
+BOARD_SEPOLICY_DIRS += \
+	device/asus/grouper/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+	file_contexts \
+	genfs_contexts \
+	app.te \
+	btmacreader.te \
+	device.te \
+	drmserver.te \
+	file.te \
+	gpsd.te \
+	init_shell.te \
+	keystore.te \
+	mediaserver.te \
+	rild.te \
+	sensors_config.te \
+	surfaceflinger.te \
+	system.te \
+	zygote.te
